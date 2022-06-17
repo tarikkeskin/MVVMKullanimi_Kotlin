@@ -7,6 +7,9 @@ plugins {
 android {
     compileSdk 32
 
+    buildFeatures{
+        dataBinding true
+    }
     defaultConfig {
         applicationId "com.example.mvvmkullanimi"
         minSdk 21
