@@ -37,11 +37,12 @@ class MainActivity : AppCompatActivity() {
             val toplam = sayi1 + sayi2
             tasarim.textView.text = toplam.toString()
         }
-
+        val kisi = Kisiler(11111,"Ahmet",1.98)
         buttonGoToB.setOnClickListener {
             val intent = Intent(this@MainActivity,ActivityB::class.java)
-            startActivity(intent)
+            intent.putExtra("nesne",kisi)
 
+            startActivity(intent)
         }
 
 
