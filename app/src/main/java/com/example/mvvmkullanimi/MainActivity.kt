@@ -1,5 +1,6 @@
 package com.example.mvvmkullanimi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -35,6 +36,12 @@ class MainActivity : AppCompatActivity() {
 
             val toplam = sayi1 + sayi2
             tasarim.textView.text = toplam.toString()
+        }
+
+        buttonGoToB.setOnClickListener {
+            val intent = Intent(this@MainActivity,ActivityB::class.java)
+            startActivity(intent)
+
         }
 
 
