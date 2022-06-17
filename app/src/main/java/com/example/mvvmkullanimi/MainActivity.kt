@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransaction.add(R.id.fragment_tutucu,BlankFragment())
+
+        fragmentTransaction.commit()
 
     }
 }
